@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hockey-primary': '#FF4240',
+            'footer-primary': '#FFFFFF',
+          }
+        }
+      }
+    }
+  </script>
+
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+
+</head>
+<body class="font-manrope">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl">Hockey <span>’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-hockey-primary text-white ">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+
+        <!--slider and carousel-->
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full h-full">
+            <img src="/Images/1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full h-full">
+            <img src="/Images/0.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+      <section class="my-12 gap-5 p-7">
+      <div class="space-y-6">
+        <h3 class="text-4xl font-bold text-center">Professional Hockeys Club</h3>
+        <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <br>
+        <div class="text-center flex">
+          <div>
+          <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+          <h4>Prayer Facility</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div>
+<div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+<h4>Experienced Coach</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+        <div>
+<div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+<h4>Senior Player</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+<div>
+<div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+<h4>Training Ground</h4>
+          <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+        </div>
+</div>
+      </section>
+
+<section class="my-12 penetrate">
+  <div class="space-y-6">
+    <h3 class="text-4xl font-bold text-center">Program Sections</h3>
+    <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+
+    <div class="flex gap-5">
+    <div class="card w-1/2 bg-base-100 shadow-xl image-full">
+      <figure><img src="Images/2.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Junior Program</h2>
+        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+        <div class="card-actions justify-start">
+          <button class="btn bg-hockey-primary text-white">Register Now!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card w-1/2 bg-base-100 shadow-xl image-full">
+      <figure><img src="Images/3.png" alt="Shoes" /></figure>
+      <div class="card-body">
+        <h2 class="card-title">Teenager Program</h2>
+        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+          enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+        <div class="card-actions justify-start">
+          <button class="btn bg-hockey-primary text-white">Register Now!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card w- bg-base-100 shadow-xl image-full">
+    <figure><img src="Images/4.png" alt="Shoes" /></figure>
+    <div class="card-body">
+      <h2 class="card-title">Professional Program</h2>
+      <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+      <div class="card-actions justify-start">
+        <button class="btn bg-hockey-primary text-white">Register Now!</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="my-12">
+  <div class="space-y-6">
+    <h3 class="text-4xl font-bold text-center">Our New Products</h3>
+    <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+
+    <div class="flex gap-5 justify-center">
+
+    <div>
+      <div class="card card-side bg-base-100 shadow-xl w-96">
+        <figure><img src="Images/5.png" alt="Movie"/></figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold">World Cup Flags Football</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div>
+          <p class="text-red-600">Price - $22.00</p>
+          <p>Delivery Fee : Free</p>
+        </div>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-side bg-base-100 shadow-xl w-96">
+        <figure><img src="Images/6.png" alt="Movie"/></figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold">World Cup Flags Football</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div>
+          <p class="text-red-600">Price - $22.00</p>
+          <p>Delivery Fee : Free</p>
+        </div>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex gap-5 justify-center">
+
+    <div>
+      <div class="card card-side bg-base-100 shadow-xl w-96">
+        <figure><img src="Images/7.png" alt="Movie"/></figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold">World Cup Flags Football          </h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div>
+          <p class="text-red-600">Price - $22.00</p>
+          <p>Delivery Fee : Free</p>
+        </div>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-side bg-base-100 shadow-xl w-96">
+        <figure><img src="Images/8.png" alt="Movie"/></figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold">World Cup Flags Football</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div>
+          <p class="text-red-600">Price - $22.00</p>
+          <p>Delivery Fee : Free</p>
+        </div>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="flex gap-5 justify-center">
+
+    <div>
+      <div class="card card-side bg-base-100 shadow-xl w-96">
+        <figure><img src="Images/9.png" alt="Movie"/></figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold">World Cup Flags Football</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div>
+          <p class="text-red-600">Price - $22.00</p>
+          <p>Delivery Fee : Free</p>
+        </div>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="card card-side bg-base-100 shadow-xl w-96">
+        <figure><img src="Images/10.png" alt="Movie"/></figure>
+        <div class="card-body">
+          <h2 class="card-title font-bold">World Cup Flags Football</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div>
+          <p class="text-red-600">Price - $22.00</p>
+          <p>Delivery Fee : Free</p>
+        </div>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</Section>
+    
+<section class="my-12">
+  <div class="space-y-6">
+    <h3 class="text-4xl font-bold text-center">Clients Question</h3>
+    <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+
+    <div class="hero min-h-screen bg-base-200">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-bold">
+              Our Equipment
+            </div>
+            <div class="collapse-content"> 
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              Hockey Training
+            </div>
+            <div class="collapse-content"> 
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              Private Lessons
+            </div>
+            <div class="collapse-content"> 
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-bold">
+              Ski Touring
+            </div>
+            <div class="collapse-content"> 
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+            Booking
+            </div>
+            <div class="collapse-content"> 
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-bold">
+              Pricing
+            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+    <footer>
+      <footer class="footer p-10 bg-black text-base-content">
+        <aside>
+          
+          <h3 class="from-neutral-50 font-extrabold">Get In Touch</h3>
+          <p class="from-neutral-50 font-extrabold">Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. <br>Providing reliable tech since 1992</p>
+        </aside> 
+        <nav>
+          <h6 class="footer-title footer-primary font-extrabold">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Leadership</a>
+          <a class="link link-hover">Careers</a>
+          <a class="link link-hover">News & Article</a>
+          <a class="link link-hover">Legal Notice</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Support</h6> 
+          <a class="link link-hover">Help Center</a>
+          <a class="link link-hover">FAQ</a>
+          <a class="link link-hover">Ticket Support</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav> 
+
+        
+        <nav>
+          <h6 class="footer-title">Services</h6> 
+          <a class="link link-hover">Academy</a>
+          <a class="link link-hover">Group Lesson</a>
+          <a class="link link-hover">Private Lesson</a>
+          <a class="link link-hover">Hockeys for kids</a>
+          <a class="link link-hover">Hockeys for Adult</a>
+        </nav>
+      </footer>
+    </footer>
+</body>
+</html>
